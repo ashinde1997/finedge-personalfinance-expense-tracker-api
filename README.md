@@ -323,3 +323,4 @@ All 36 tests pass across 4 test suites:
 | `summary.test.js` | Analytics, caching, saving tips |
 
 Tests use `supertest` to hit the actual Express app and `jest` for assertions. Test data is wiped before/after each suite so tests don't interfere with each other.
+
