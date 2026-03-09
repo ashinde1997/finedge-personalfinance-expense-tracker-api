@@ -1,0 +1,41 @@
+{
+  "name": "finedge-api",
+  "version": "1.0.0",
+  "description": "FinEdge – Personal Finance & Expense Tracker API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node node_modules/nodemon/bin/nodemon.js server.js",
+    "test": "cross-env NODE_ENV=test node node_modules/jest/bin/jest.js --runInBand --forceExit --detectOpenHandles",
+    "test:coverage": "cross-env NODE_ENV=test node node_modules/jest/bin/jest.js --runInBand --coverage --forceExit --detectOpenHandles"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  },
+  "keywords": [
+    "finance",
+    "expense-tracker",
+    "api"
+  ],
+  "author": "FinEdge",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.10.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.2.2"
+  }
+}
